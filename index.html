@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATK Enterprise</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .marquee {
+      background: #FFD700;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 0;
+      overflow: hidden;
+      position: relative;
+    }
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 12s linear infinite;
+      white-space: nowrap;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo + Name -->
+      <div class="flex items-center space-x-3">
+        <img src="https://via.placeholder.com/50" alt="Company Logo" class="w-12 h-12 rounded-full border-2 border-white">
+        <h1 class="text-2xl font-bold">ATK Enterprise</h1>
+      </div>
+      
+      <!-- Navigation -->
+      <nav>
+        <a href="#about" class="px-3">About</a>
+        <a href="#services" class="px-3">Services</a>
+        <a href="#contact" class="px-3">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <span>🌍 A Smart Energy Solution in Bangladesh ⚡</span>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-500 text-white text-center py-20">
+    <h2 class="text-4xl font-bold mb-4">Smart Energy Solutions for Bangladesh</h2>
+    <p class="text-lg mb-6">We provide modern and sustainable energy services</p>
+    <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold">Get in Touch</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container mx-auto py-16">
+    <h2 class="text-3xl font-bold text-center mb-8">About Our Energy Solutions</h2>
+    <p class="text-center max-w-2xl mx-auto">
+      ATK Energy Solution is a modern company providing renewable energy systems and efficient power technologies. 
+      Our goal is to deliver smart and affordable energy solutions for a sustainable future in Bangladesh.
+      Green Hydrogen,pizoelectricity
+      Whats up +8801755486194,Call+8801532151035.
+      Email:atkenterprise1996@gmail.com
+      Dinajpur,Bangladesh
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-gray-200 py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Our Energy Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Solar Energy Solutions</h3>
+          <p>Design, installation, and maintenance of modern solar systems.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Energy Consulting</h3>
+          <p>Expert guidance for cost-effective and sustainable energy usage.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Smart Grid (On/OFf) Solutions</h3>
+          <p>Advanced energy management systems for the future.Pizoelectricity</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container mx-auto py-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+    <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow">
+      <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded">
+      <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded">
+      <textarea placeholder="Write your energy needs..." class="w-full p-3 mb-4 border rounded"></textarea>
+      <button class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold w-full">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center p-4">
+    <p>&copy; 2025 ATK Enterprise,Smart Energy Solution
+    Dinajpur,Bangladesh. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
